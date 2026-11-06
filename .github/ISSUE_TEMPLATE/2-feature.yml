@@ -1,0 +1,31 @@
+name: Feature request
+description: Something you would like it to do
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please write this yourself, in your own words. Check the roadmap first: it may be planned
+        or listed as not planned.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you are trying to do
+      description: The situation, not the solution. "I want to … but …"
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: Optional. How you imagine it working.
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Did you use AI to write this request?
+      options:
+        - "No"
+        - Only for wording or translation
+        - Yes, for most of it
+    validations:
+      required: true

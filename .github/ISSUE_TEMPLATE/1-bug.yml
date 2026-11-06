@@ -1,0 +1,52 @@
+name: Bug report
+description: Something does not work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please write this yourself, in your own words. Short is fine.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: And what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried
+      description: Restarting, another version, another setting. Optional.
+  - type: input
+    id: version
+    attributes:
+      label: Version and system
+      placeholder: 0.4.1 on Fedora 43
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Optional. Remove passwords and tokens first.
+      render: text
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Did you use AI to write this report?
+      options:
+        - "No"
+        - Only for wording or translation
+        - Yes, for most of it
+    validations:
+      required: true
