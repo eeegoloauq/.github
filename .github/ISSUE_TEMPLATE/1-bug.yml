@@ -40,13 +40,11 @@ body:
       label: Logs or screenshots
       description: Optional. Remove passwords and tokens first.
       render: text
-  - type: dropdown
+  - type: input
     id: ai
     attributes:
-      label: Did you use AI to write this report?
-      options:
-        - "No"
-        - Only for wording or translation
-        - Yes, for most of it
+      label: AI use
+      description: '"None", or the model and tool you used. See CONTRIBUTING.md.'
+      placeholder: None
     validations:
       required: true

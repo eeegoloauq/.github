@@ -19,13 +19,11 @@ body:
     attributes:
       label: What would help
       description: Optional. How you imagine it working.
-  - type: dropdown
+  - type: input
     id: ai
     attributes:
-      label: Did you use AI to write this request?
-      options:
-        - "No"
-        - Only for wording or translation
-        - Yes, for most of it
+      label: AI use
+      description: '"None", or the model and tool you used. See CONTRIBUTING.md.'
+      placeholder: None
     validations:
       required: true
